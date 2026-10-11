@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: #0A0A0F;
+    color: #F5F0EA;
+    font-family: 'DM Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  ::selection { background: rgba(201,169,110,0.25); color: #F5F0EA; }
+}
+
+@layer components {
+  /* ── Typography ── */
+  .gold-engraved {
+    color: transparent;
+    background: linear-gradient(135deg, #a07840 0%, #C9A96E 30%, #f0d9a8 50%, #C9A96E 70%, #a07840 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    filter: drop-shadow(0 0 12px rgba(201,169,110,0.3));
+  }
+
+  .purple-glow {
+    filter: drop-shadow(0 0 20px rgba(123,47,190,0.45));
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    color: #F5F0EA;
+    line-height: 1.1;
+  }
+
+  /* ── Rules & dividers ── */
+  .gold-rule {
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(201,169,110,0.2) 20%, rgba(201,169,110,0.55) 50%, rgba(201,169,110,0.2) 80%, transparent 100%);
+  }
+
+  .gold-rule-solid {
+    height: 1px;
+    background: rgba(201,169,110,0.3);
+  }
+
+  /* ── Particles ── */
+  .particle-canvas {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ── Nav ── */
+  .nav-link {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(245,240,234,0.5);
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  .nav-link:hover { color: #C9A96E; }
+  .nav-link.active { color: #C9A96E; }
+
+  /* ── Countdown (mini) ── */
+  .countdown-digit-sm {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    color: transparent;
+    background: linear-gradient(135deg, #a07840 0%, #C9A96E 30%, #f0d9a8 50%, #C9A96E 70%, #a07840 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    line-height: 1;
+  }
+
+  .countdown-label-sm {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(123,47,190,0.8);
+    font-size: 0.55rem;
+  }
+
+  /* ── Cards ── */
+  .glass-card {
+    background: rgba(245,240,234,0.03);
+    border: 1px solid rgba(201,169,110,0.15);
+    backdrop-filter: blur(8px);
+  }
+
+  /* ── RSVP / Form inputs ── */
+  .field-input {
+    background: rgba(245,240,234,0.04);
+    border: 1px solid rgba(201,169,110,0.2);
+    color: #F5F0EA;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    font-size: 0.875rem;
+    padding: 0.75rem 1rem;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.3s ease, background 0.3s ease;
+    border-radius: 2px;
+  }
+  .field-input::placeholder { color: rgba(245,240,234,0.3); }
+  .field-input:focus { border-color: rgba(201,169,110,0.55); background: rgba(245,240,234,0.07); }
+  .field-input.error { border-color: rgba(242,196,206,0.65); }
+
+  .gold-btn {
+    background: linear-gradient(135deg, #a07840 0%, #C9A96E 50%, #a07840 100%);
+    background-size: 200% 200%;
+    color: #0A0A0F;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding: 0.875rem 2rem;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-position 0.4s ease, opacity 0.3s ease;
+    border: none;
+  }
+  .gold-btn:hover:not(:disabled) { background-position: right center; }
+  .gold-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+
+  /* ── Gallery ── */
+  .gallery-item {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+    display: block;
+  }
+  .gallery-item:hover img { transform: scale(1.04); }
+  .gallery-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(201,169,110,0);
+    transition: border-color 0.4s ease;
+    pointer-events: none;
+  }
+  .gallery-item:hover::after { border-color: rgba(201,169,110,0.35); }
+
+  /* ── Copy button ── */
+  .copy-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    color: rgba(201,169,110,0.7);
+    cursor: pointer;
+    transition: color 0.2s;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  .copy-btn:hover { color: #C9A96E; }
+}
+
+/* Shimmer animation for logo/names */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.name-shimmer {
+  background: linear-gradient(90deg, #a07840 0%, #C9A96E 25%, #f0d9a8 50%, #C9A96E 75%, #a07840 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 5s linear infinite;
+}
+
+/* Scroll fade-in utility — used with Framer Motion whileInView */
+.section-pad {
+  padding-top: clamp(4rem, 10vh, 7rem);
+  padding-bottom: clamp(4rem, 10vh, 7rem);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .name-shimmer { animation: none; color: #C9A96E; }
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
