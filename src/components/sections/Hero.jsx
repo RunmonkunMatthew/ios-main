@@ -21,11 +21,11 @@ export function Hero() {
       {/* ── Background image ──
           When real photo arrives:
           1. Add to /public/images/hero.jpg
-          2. Replace the placeholder div below with:
+          2. Replace the placeholder div below with: */}
              <img src="/images/hero.jpg" alt="Peter and Paulinah"
                className="absolute inset-0 w-full h-full object-cover object-center" />
-      ── */}
-      <div className="absolute inset-0" style={HERO_PLACEHOLDER_STYLE} aria-hidden="true" />
+      {/* ── */}
+      {/* <div className="absolute inset-0" style={HERO_PLACEHOLDER_STYLE} aria-hidden="true" /> */}
 
       {/* Dark overlay gradient — heavier at bottom so text pops */}
       <div

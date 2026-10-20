@@ -34,7 +34,7 @@ export function FindUs() {
           </div>
 
           {/* Map embed */}
-          <div
+          {/* <div
             className="w-full overflow-hidden relative"
             style={{ borderRadius: '2px', border: '1px solid rgba(201,169,110,0.12)', height: '380px' }}
           >
@@ -48,10 +48,10 @@ export function FindUs() {
               referrerPolicy="no-referrer-when-downgrade"
               title="Wedding Venue"
             />
-          </div>
-          <p className="font-body font-light text-cream/20 text-xs mt-2 text-center">
+          </div> */}
+          {/* <p className="font-body font-light text-cream/20 text-xs mt-2 text-center">
             Replace the map embed URL in src/lib/data.js with your actual venue coordinates.
-          </p>
+          </p> */}
         </motion.div>
       </div>
     </section>
@@ -76,7 +76,7 @@ export function Footer() {
           className="name-shimmer font-display italic font-light"
           style={{ fontSize: 'clamp(2rem, 7vw, 4rem)', letterSpacing: '-0.01em' }}
         >
-          {WEDDING.groom} & {WEDDING.bride}
+          {WEDDING.bride} & {WEDDING.groom}
         </p>
 
         <p className="font-body font-light text-cream/25 text-xs tracking-widest uppercase">

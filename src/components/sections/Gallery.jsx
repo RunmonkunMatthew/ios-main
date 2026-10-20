@@ -114,7 +114,7 @@ export function Gallery() {
           <h2 className="section-title">Before the Day</h2>
           <div className="gold-rule w-20" />
           <p className="font-body font-light text-cream/35 text-sm" style={{ maxWidth: '42ch' }}>
-            A glimpse of Peter and Paulinah, before the celebration begins.
+            A glimpse of the couple, before the celebration begins.
           </p>
         </motion.div>
 
@@ -134,10 +134,10 @@ export function Gallery() {
                     aspectRatio: img.orientation === 'portrait' ? '4/5' : '4/3',
                     borderRadius: '2px',
                   }}
-                  onClick={() => open(img.originalIndex)}
+                  // onClick={() => }
                   role="button"
                   tabIndex={0}
-                  onKeyDown={e => e.key === 'Enter' && open(img.originalIndex)}
+                  // onKeyDown={e => e.key === 'Enter' && open(img.originalIndex)}
                   aria-label={`Open photo ${img.originalIndex + 1}`}
                 >
                   {img.src ? (

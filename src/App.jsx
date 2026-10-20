@@ -51,11 +51,11 @@ export default function App() {
         <MeetTheCouple />
         <Divider />
         <EventDetails />
-        <Schedule />
+        {/* <Schedule /> */}
+        <Divider />
         <Divider />
         <WeddingParty />
-        {/* <Divider /> */}
-        {/* <Gallery /> */}
+        <Gallery />
         <Divider />
         <GiftsAndAccount />
         <Divider />

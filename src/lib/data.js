@@ -29,21 +29,21 @@ export const STORY = [
     year: '2019',
     chapter: 'First Meeting',
     text: 'Their story began the way the best stories do — unexpectedly. At a small gathering of about thirty people at Ejigbo Anglican church, they both met for the very first time. She was a pre-degree student, while he had come to minister. After the meeting, her school mother encouraged her to greet him. She walked over, respectfully greeted him, and excganged a few pleasantries. And that was it.',
-    image: null, // replace with: '/images/story-1.jpg'
+    image: '/story1.jpg',
   },
   {
     id: 2,
     year: '2024',
     chapter: 'Growing Together',
     text: ' Years passed, and sometime in 2024, he began to see her differently. He noticed her kindness, selflessness, character, and most importantly, her genuine love for God. Then on September 4, 2024 she began to pray seriously about her future and marriage. Through that season of prayer, she came to the realization that he might be the man God had prepared for her.',
-    image: null,
+    image: '/story2.jpg',
   },
   {
     id: 3,
     year: '2026',
     chapter: 'He Asked. She Said Yes.',
-    text: 'Finally on 22nd March, what had quietly grown through years of friendship, faith, and shared purpose became an official relationship. What began  with a small church gathering became a journey neither of them could have planned. And the rest, as they say, is history still being written.',
-    image: null,
+    text: 'Finally on 22nd March, what had quietly grown through years of friendship, faith, and shared purpose became an official relationship. What began  with a small church gathering became a journey neither of them could have planned. They thought they were only meeting, But God knew he was bringing two hearts together at the right time. And the rest, as they say, is history still being written.',
+    image: '/story3.jpg',
   },
 ]
 
@@ -63,75 +63,75 @@ export const SCHEDULE = [
 ]
 
 export const COUPLE = {
-  groom: {
-    name: 'Peter',
-    bio: 'A man of faith, warmth, and quiet strength. Peter leads with intention and loves with everything he has. His greatest joy is building a life that glorifies God — and now, building it with Paulinah.',
-    image: null, // replace with: '/images/peter.jpg'
-  },
   bride: {
     name: 'Paulinah',
-    bio: 'Graceful, spirited, and deeply kind. Paulinah carries a light that draws people in. She believes love is an act of courage — and choosing Peter every day is the easiest brave thing she has ever done.',
-    image: null,
+    bio: '',
+    image: '/mama.jpg',
+  },
+  groom: {
+    name: 'Peter',
+    bio: '',
+    image: '/pastor.jpg',
   },
 }
 
 export const WEDDING_PARTY = {
   bridesmaids: [
-    { name: 'Adepeju Dada', role: 'Maid of Honour', image: null },
-    { name: 'Oluwaseyi Makinde', role: 'Bridesmaid', image: null },
-    { name: 'Faith Kolawole', role: 'Bridesmaid', image: null },
-    { name: 'Jumobi Fatola', role: 'Bridesmaid', image: null },
-    { name: 'Hawa Efetobore-Ojeniyi', role: 'Bridesmaid', image: null },
-    { name: 'Adedayo Segilola', role: 'Bridesmaid', image: null },
-    { name: 'Faith Omotayo', role: 'Bridesmaid', image: null },
-    { name: 'Sikirat Dera', role: 'Bridesmaid', image: null },
-    { name: 'Lilian Adekemi', role: 'Bridesmaid', image: null },
+    { name: 'Adepeju Dada', role: 'Maid of Honour', image: '/peju.jpg' },
+    { name: 'Oluwaseyi Makinde', role: 'Bridesmaid', image: '/seyi.jpg' },
+    { name: 'Faith Kolawole', role: 'Bridesmaid', image: '/faithO.jpg' },
+    { name: 'Jumobi Fatola', role: 'Bridesmaid', image: '/jumobi.jpg' },
+    { name: 'Hawa Efetobore-Ojeniyi', role: 'Bridesmaid', image: '/hawa.jpg' },
+    { name: 'Rhoda AKinjogbin', role: 'Bridesmaid', image: '/rhoda.jpg' },
+    { name: 'Adedayo Segilola', role: 'Bridesmaid', image: '/dayo.jpg' },
+    { name: 'Faith Omotayo', role: 'Bridesmaid', image: '/kemi.jpg' },
+    { name: 'Sikirat Dere', role: 'Bridesmaid', image: 'sikirat.jpg' },
+    { name: 'Ayomide Adenugba', role: 'Bridesmaid', image: '/dees.jpg' },
+    { name: 'Oluwapelumi Makinde', role: 'Bridesmaid', image: '/pelumi.jpg' },
+    { name: 'Wusu Senami', role: 'Bridesmaid', image: '/senami.jpg' },
+    { name: 'Omobolanle Lawal', role: 'Bridesmaid', image: '/bola.jpg' },
+    { name: 'Temiloluwa Mayomi', role: 'Bridesmaid', image: '/temi.jpg' },
+    { name: 'Jesutosin Fadipe', role: 'Bridesmaid', image: '/jesutosin.jpg' },
   ],
   groomsmen: [
-    { name: 'Samuel Ladapo', role: 'Best Man', image: null },
-    { name: 'Joshua Oyajumo', role: 'Groomsman', image: null },
-    { name: 'Adebola Adebamowo', role: 'Groomsman', image: null },
-    { name: 'Oluwafemi Odeshina', role: 'Groomsman', image: null },
-    { name: 'Sir P', role: 'Groomsman', image: null },
-    { name: 'Tunbaba', role: 'Groomsman', image: null },
-    { name: 'Prosper Adeyinka', role: 'Groomsman', image: null },
-    { name: 'Matthew Runmonkun', role: 'Groomsman', image: null },
-    { name: 'Peter Ogunwande', role: 'Groomsman', image: null },
+    { name: 'Samuel Ladapo', role: 'Best Man', image: '/semo.jpg' },
+    { name: 'Tumise Adeniran', role: 'Groomsman', image: '/tunbaba.jpg' },
+    { name: 'Joshua Oyajumo', role: 'Groomsman', image: '/joshua.jpg' },
+    { name: 'Pelumi Adelakun', role: 'Groomsman', image: '/sir p.jpg' },
+    { name: 'Pst Timileyin Ojeniyi', role: 'Groomsman', image: '/pst-timi.jpg' }, 
+    { name: 'Babajimisola Oluwarotimi', role: 'Groomsman', image: '/jims.jpg' },
+    { name: 'Ademola Adejuwon', role: 'Groomsman', image: '/dnnp.jpg' },
+    { name: 'David Oladunni', role: 'Groomsman', image: '/david.jpg' },
+    { name: 'Isreal James', role: 'Groomsman', image: '/araus.jpg' },
+    { name: 'Alalade Adepeju', role: 'Groomsman', image: '/alade.jpg' },
+    { name: 'Peter Ogunwande', role: 'Groomsman', image: '/shawn.jpg' },
+    { name: 'Micheal Adewusi', role: 'Groomsman', image: '/micheal.jpg' },
+    { name: 'Christopher Ajayi', role: 'Groomsman', image: '/chris.jpg' },
+    { name: 'Adejare Ajayi', role: 'Groomsman', image: '/jare.jpg' },
+    { name: 'Caleb Oyajumo', role: 'Groomsman', image: '/caleb.jpg' },
   ],
 }
 
 // Gallery — add real image paths when photos arrive
 // Mix of landscape and portrait as discussed
 export const GALLERY = [
-  { id: 1, src: null, alt: 'Peter and Paulinah', orientation: 'landscape' },
-  { id: 2, src: null, alt: 'Peter and Paulinah', orientation: 'portrait' },
-  { id: 3, src: null, alt: 'Peter and Paulinah', orientation: 'portrait' },
-  { id: 4, src: null, alt: 'Peter and Paulinah', orientation: 'landscape' },
-  { id: 5, src: null, alt: 'Peter and Paulinah', orientation: 'portrait' },
-  { id: 6, src: null, alt: 'Peter and Paulinah', orientation: 'landscape' },
-  { id: 7, src: null, alt: 'Peter and Paulinah', orientation: 'portrait' },
-  { id: 8, src: null, alt: 'Peter and Paulinah', orientation: 'landscape' },
-  { id: 9, src: null, alt: 'Peter and Paulinah', orientation: 'portrait' },
-  { id: 10, src: null, alt: 'Peter and Paulinah', orientation: 'landscape' },
-  { id: 11, src: null, alt: 'Peter and Paulinah', orientation: 'portrait' },
-  { id: 12, src: null, alt: 'Peter and Paulinah', orientation: 'landscape' },
+  { id: 1, src: '/photo 1.jpg', alt: 'Peter and Paulinah', orientation: 'landscape' },
+  { id: 2, src: '/photo 2.jpg', alt: 'Peter and Paulinah', orientation: 'portrait' },
+  { id: 3, src: '/photo 3.jpg', alt: 'Peter and Paulinah', orientation: 'portrait' },
 ]
 
 export const GIFTS = [
-  // { id: 1, item: 'Kitchen Aid Stand Mixer', note: 'In blush or white', link: null },
-  // { id: 2, item: 'Dinner Set (12 pieces)', note: 'Bone china preferred', link: null },
-  // { id: 3, item: 'Nespresso Coffee Machine', note: null, link: null },
-  // { id: 4, item: 'Smart TV (55" and above)', note: null, link: null },
-  // { id: 5, item: 'Bedding Set (King size)', note: 'Egyptian cotton, neutral tones', link: null },
-  // { id: 6, item: 'Air Fryer', note: 'Large capacity', link: null },
-  // { id: 7, item: 'Blender', note: 'High-powered, glass jar', link: null },
-  // { id: 8, item: 'Home Fragrance Set', note: 'Diffuser and candles', link: null },
+  { id: 1, item: 'Microwave Oven', note: null, link: null },
+  { id: 2, item: 'Water Dispenser', note: null, link: null },
+  { id: 3, item: 'Groceries rack', note: null, link: null },
+  { id: 4, item: 'Ironing Table', note: null, link: null },
+  { id: 5, item: 'Plate Rack', note: null, link: null },
 ]
 
 export const ACCOUNT = {
   bankName: 'Wema Bank',
-  accountName: 'Peter & Paulinah',
-  accountNumber: '0123456789',
+  accountName: 'Olatunde Peter Iyanuoluwa',
+  accountNumber: '0268712897',
   note: 'Your generosity is a blessing. Every gift, large or small, is deeply appreciated.',
 }
 
