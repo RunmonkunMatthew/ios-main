@@ -125,7 +125,7 @@ export const GIFTS = [
   { id: 2, item: 'Water Dispenser', note: null, link: null },
   { id: 3, item: 'Groceries rack', note: null, link: null },
   { id: 4, item: 'Ironing Table', note: null, link: null },
-  { id: 5, item: 'Plate Rack', note: null, link: null },
+  { id: 5, item: 'A set of Pots', note: null, link: null },
 ]
 
 export const ACCOUNT = {
