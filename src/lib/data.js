@@ -17,7 +17,7 @@ export const CEREMONY = {
 
 export const RECEPTION = {
   title: 'Reception',
-  time: '2:00 PM',
+  time: '1:00 PM',
   venue: 'DManvic Event Center',
   address: 'DManvic Event Center, Ajisafe power line, Oju-Ore, Sango-Ota, Ogun State',
   note: 'Dancing and menu menu to follow the ceremony.',
