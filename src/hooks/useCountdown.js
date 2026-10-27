@@ -26,17 +26,14 @@ export function useCountdown({ powerUp = false } = {}) {
       return
     }
     const target = getTimeLeft()
-    const steps = 30
-    const stepMs = 1800 / steps
+    const steps = 30, stepMs = 1800 / steps
     let step = 0
     powerRef.current = setInterval(() => {
       step++
       const eased = 1 - Math.pow(1 - step / steps, 3)
       setDisplay({
-        days: Math.round(target.days * eased),
-        hours: Math.round(target.hours * eased),
-        minutes: Math.round(target.minutes * eased),
-        seconds: Math.round(target.seconds * eased),
+        days: Math.round(target.days * eased), hours: Math.round(target.hours * eased),
+        minutes: Math.round(target.minutes * eased), seconds: Math.round(target.seconds * eased),
       })
       if (step >= steps) { clearInterval(powerRef.current); setPowered(true) }
     }, stepMs)

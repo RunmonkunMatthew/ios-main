@@ -138,5 +138,5 @@ export const ACCOUNT = {
 
 export const VENUE_MAP = {
   // Replace with actual Google Maps embed URL
-  embedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.45388915!2d3.1438734!3d6.5483801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1234567890',
+  // embedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.45388915!2d3.1438734!3d6.5483801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1234567890',
 }

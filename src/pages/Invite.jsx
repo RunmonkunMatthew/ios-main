@@ -289,7 +289,7 @@ function InviteCard({ guestName, cardRef }) {
             Dress Code
           </p>
           <p style={{ fontSize: '0.68rem', fontStyle: 'italic', color: '#7A5A7A', margin: 0 }}>
-            Lilac · Blush Pink · Gold
+            Lilac · Blush Pink
           </p>
         </div>
 
