@@ -28,14 +28,14 @@ export const STORY = [
     id: 1,
     year: '2019',
     chapter: 'First Meeting',
-    text: 'Their story began the way the best stories do — unexpectedly. At a small gathering of about thirty people at Ejigbo Anglican church, they both met for the very first time. She was a pre-degree student, while he had come to minister. After the meeting, her school mother encouraged her to greet him. She walked over, respectfully greeted him, and excganged a few pleasantries. And that was it.',
+    text: 'Their story began the way the best stories do — unexpectedly. At a small gathering of about thirty people at Ejigbo Anglican church, they both met for the very first time. She was a pre-degree student, while he had come to minister. After the meeting, her school mother encouraged her to greet him. She walked over, respectfully greeted him, and exchanged a few pleasantries and that was it. At that time, she was simply seeking help with gaining admission to study nursing.',
     image: '/story1.jpg',
   },
   {
     id: 2,
     year: '2024',
     chapter: 'Growing Together',
-    text: ' Years passed, and sometime in 2024, he began to see her differently. He noticed her kindness, selflessness, character, and most importantly, her genuine love for God. Then on September 4, 2024 she began to pray seriously about her future and marriage. Through that season of prayer, she came to the realization that he might be the man God had prepared for her.',
+    text: ' Years passed, what began as a conversation about admission gradually became discipleship, friendship, prayer and ministry. He saw her as his disciple and someone he would one day serve God alongside, while she remained focused on her dream of becoming a nurse. Neither of them knew that God was quietly writing a different story. Sometime in 2024, he began to see her differently. He noticed her kindness, selflessness, character, and most importantly, her genuine love for God. Then she also began to pray seriously about her future and marriage. Through that season of prayer, she came to the quiet realization that he might be the man God had prepared for her.',
     image: '/story2.jpg',
   },
   {
