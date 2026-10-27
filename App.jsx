@@ -64,50 +64,6 @@ function MainSite() {
     </div>
   )
 }
-// export default function App() {
-//   return (
-//     <div
-//       className="relative min-h-screen w-full overflow-x-hidden"
-//       style={{ background: 'radial-gradient(ellipse at 50% 0%, #13091e 0%, #0A0A0F 50%)' }}
-//     >
-//       <Particles />
-
-//       {/* Vignette overlay */}
-//       <div
-//         aria-hidden="true"
-//         style={{
-//           position: 'fixed', inset: 0, zIndex: 1, pointerEvents: 'none',
-//           background: 'radial-gradient(ellipse at 50% 50%, transparent 50%, rgba(10,10,15,0.6) 100%)',
-//         }}
-//       />
-
-//       <Nav />
-
-//       <main className="relative z-10">
-//         <Hero />
-//         <Divider />
-//         <Story />
-//         <Divider />
-//         <MeetTheCouple />
-//         <Divider />
-//         <EventDetails />
-//         {/* <Schedule /> */}
-//         <Divider />
-//         <Divider />
-//         <WeddingParty />
-//         <Gallery />
-//         <Divider />
-//         <GiftsAndAccount />
-//         <Divider />
-//         <RSVP />
-//         <Divider />
-//         <FindUs />
-//       </main>
-
-//       <Footer />
-//     </div>
-//   )
-// }
 
 export default function App() {
   return (
