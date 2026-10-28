@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { WEDDING } from '../../lib/data'
-const LINKS = [{ label: 'Story', href: '#story' }, { label: 'Details', href: '#details' }, { label: 'Gallery', href: '#gallery' }, { label: 'Gifts', href: '#gifts' }, { label: 'RSVP', href: '#rsvp' }]
+const LINKS = [{ label: 'Story', href: '#story' }, { label: 'Details', href: '#details' }, { label: 'Gallery', href: '#gallery' }, { label: 'Gifts', href: '#gifts' }, { label: 'RSVP', href: '#rsvp' }, 
+  { label: 'Programme', href: '#programme' }]
 export function Nav() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)

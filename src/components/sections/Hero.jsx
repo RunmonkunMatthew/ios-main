@@ -7,6 +7,21 @@ export function Hero() {
     <section id="hero" className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden">
       {/* Background — replace div with <img src="/images/hero.jpg"> when photo arrives */}
       <div className="absolute inset-0" style={{ background: `radial-gradient(ellipse at 30% 60%, rgba(123,47,190,0.25) 0%, transparent 60%), radial-gradient(ellipse at 70% 40%, rgba(201,169,110,0.12) 0%, transparent 55%), linear-gradient(180deg, #0f0a1a 0%, #0A0A0F 100%)` }} aria-hidden="true" />
+      
+    {/* Background gradient: stays as a fallback while the photo loads */}
+    <div className="absolute inset-0" style={{ background: `radial-gradient(...)` }} aria-hidden="true" />
+
+    {/* NEW: the hero photo */}
+    <img
+      src="/images/hero.jpg"
+      alt="Peter and Paulinah"
+      className="absolute inset-0 w-full h-full object-cover"
+      style={{ objectPosition: '50% 30%' }}
+      fetchpriority="high"
+    />
+
+    {/* Dark overlay: keep this, it makes the names readable on the photo */}
+
       <div className="absolute inset-0" aria-hidden="true" style={{ background: 'linear-gradient(to bottom, rgba(10,10,15,0.55) 0%, rgba(10,10,15,0.3) 40%, rgba(10,10,15,0.75) 80%, rgba(10,10,15,0.95) 100%)' }} />
       <div aria-hidden="true" className="absolute top-0 left-0 w-96 h-96 rounded-full pointer-events-none" style={{ background: 'radial-gradient(circle, rgba(123,47,190,0.18) 0%, transparent 70%)', transform: 'translate(-30%, -30%)' }} />
 

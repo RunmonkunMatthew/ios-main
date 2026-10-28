@@ -4,7 +4,7 @@ import { Nav } from './components/ui/Nav'
 import { Hero } from './components/sections/Hero'
 import { Story } from './components/sections/Story'
 import { MeetTheCouple } from './components/sections/MeetTheCouple'
-import { EventDetails, Schedule } from './components/sections/EventDetails'
+import { EventDetails } from './components/sections/EventDetails'
 import { WeddingParty } from './components/sections/WeddingParty'
 import { Gallery } from './components/sections/Gallery'
 import { GiftsAndAccount } from './components/sections/GiftsAndAccount'
@@ -12,6 +12,7 @@ import { RSVP } from './components/sections/RSVP'
 import { FindUs, Footer } from './components/sections/FindUsAndFooter'
 import { InvitePage } from './pages/Invite'
 import { WishesPage } from './pages/Wishes'
+import { Programme } from './components/sections/programme'
 
 function Divider() {
   return (
@@ -38,13 +39,13 @@ function MainSite() {
       <Nav />
       <main className="relative z-10">
         <Hero />
+        <Programme />
         <Divider />
         <Story />
         <Divider />
         <MeetTheCouple />
         <Divider />
         <EventDetails />
-        <Schedule />
         <Divider />
         <WeddingParty />
         <Divider />
