@@ -18,9 +18,9 @@ export function FindUs() {
             </div>
           ))}
         </div>
-        <div className="w-full overflow-hidden" style={{ borderRadius: '2px', border: '1px solid rgba(201,169,110,0.12)', height: '380px' }}>
+        {/* <div className="w-full overflow-hidden" style={{ borderRadius: '2px', border: '1px solid rgba(201,169,110,0.12)', height: '380px' }}>
           <iframe src={VENUE_MAP.embedUrl} width="100%" height="100%" style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg) brightness(0.85)' }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Wedding venue map" />
-        </div>
+        </div> */}
       </div>
     </section>
   )
@@ -31,7 +31,7 @@ export function Footer() {
     <footer className="relative py-16 px-6 overflow-hidden">
       <div className="gold-rule max-w-2xl mx-auto mb-14" />
       <div className="relative z-10 flex flex-col items-center gap-5 text-center">
-        <p className="name-shimmer font-display italic font-light" style={{ fontSize: 'clamp(2rem, 7vw, 4rem)' }}>{WEDDING.groomFirst} & {WEDDING.brideFirst}</p>
+        <p className="name-shimmer font-display italic font-light" style={{ fontSize: 'clamp(2rem, 7vw, 4rem)' }}>{WEDDING.bride} & {WEDDING.groom}</p>
         <p className="font-body font-light text-cream/25 text-xs tracking-widest uppercase">{WEDDING.date}</p>
         <div className="gold-rule w-16" />
         <p className="font-display italic text-cream/25 font-light">"Two are better than one."</p>

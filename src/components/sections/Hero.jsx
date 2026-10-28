@@ -19,7 +19,7 @@ export function Hero() {
         <div className="flex flex-col items-center" style={{ gap: '0.3rem' }}>
           <motion.h1 initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.1, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
             className="name-shimmer font-display italic font-light" style={{ fontSize: 'clamp(3rem, 11vw, 7.5rem)', lineHeight: 1, letterSpacing: '-0.01em' }}>
-            {WEDDING.groomFirst}
+            {WEDDING.bride}
           </motion.h1>
 
           <motion.div initial={{ opacity: 0, scaleX: 0 }} animate={{ opacity: 1, scaleX: 1 }} transition={{ duration: 0.9, delay: 0.9 }}
@@ -31,7 +31,7 @@ export function Hero() {
 
           <motion.h1 initial={{ opacity: 0, y: -24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.1, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
             className="name-shimmer font-display italic font-light" style={{ fontSize: 'clamp(3rem, 11vw, 7.5rem)', lineHeight: 1, letterSpacing: '-0.01em' }}>
-            {WEDDING.brideFirst}
+            {WEDDING.groom}
           </motion.h1>
         </div>
 
