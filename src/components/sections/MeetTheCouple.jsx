@@ -43,8 +43,8 @@ export function MeetTheCouple() {
           <div className="gold-rule w-20" />
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
-          <Portrait person={COUPLE.bride} side="groom" delay={0} />
-          <Portrait person={COUPLE.groom} side="bride" delay={0.15} />
+          <Portrait person={COUPLE.bride} side="bride" delay={0} />
+          <Portrait person={COUPLE.groom} side="groom" delay={0.15} />
         </div>
       </div>
     </section>
